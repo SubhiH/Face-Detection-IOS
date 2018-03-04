@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="face_detection" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rXb-2N-d7z">
+                                <rect key="frame" x="-0.5" y="10" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tts-6m-eM1">
+                                <rect key="frame" x="146" y="617" width="82" height="30"/>
+                                <state key="normal" title="Flip Camera">
+                                    <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="flip_camera:" destination="BYZ-38-t0r" eventType="touchUpInside" id="moF-4a-oZH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="rXb-2N-d7z" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="AHi-Xh-N9y"/>
+                            <constraint firstItem="Tts-6m-eM1" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Gbm-aC-O9O"/>
+                            <constraint firstItem="rXb-2N-d7z" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="JKO-iJ-BJf"/>
+                            <constraint firstItem="rXb-2N-d7z" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="MZO-0g-MD0"/>
+                            <constraint firstItem="rXb-2N-d7z" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="eaq-RZ-45c"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Tts-6m-eM1" secondAttribute="bottom" constant="20" id="fHY-Cu-SNe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageview" destination="rXb-2N-d7z" id="832-Me-fdN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,421 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		63F2C2AE204B807A00F9CEDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F2C2AD204B807A00F9CEDF /* AppDelegate.swift */; };
+		63F2C2B0204B807A00F9CEDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F2C2AF204B807A00F9CEDF /* ViewController.swift */; };
+		63F2C2B3204B807A00F9CEDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63F2C2B1204B807A00F9CEDF /* Main.storyboard */; };
+		63F2C2B5204B807A00F9CEDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63F2C2B4204B807A00F9CEDF /* Assets.xcassets */; };
+		63F2C2B8204B807A00F9CEDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63F2C2B6204B807A00F9CEDF /* LaunchScreen.storyboard */; };
+		63F2C2C4204B809500F9CEDF /* haarcascade_frontalface_default.xml in Resources */ = {isa = PBXBuildFile; fileRef = 63F2C2C2204B809400F9CEDF /* haarcascade_frontalface_default.xml */; };
+		63F2C2C5204B809500F9CEDF /* haarcascade_eye.xml in Resources */ = {isa = PBXBuildFile; fileRef = 63F2C2C3204B809400F9CEDF /* haarcascade_eye.xml */; };
+		63F2C2C7204B80A600F9CEDF /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63F2C2C6204B80A600F9CEDF /* opencv2.framework */; };
+		63F2C2CE204B80CE00F9CEDF /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63F2C2C9204B80CE00F9CEDF /* AssetsLibrary.framework */; };
+		63F2C2CF204B80CE00F9CEDF /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63F2C2CA204B80CE00F9CEDF /* CoreFoundation.framework */; };
+		63F2C2D0204B80CE00F9CEDF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63F2C2CB204B80CE00F9CEDF /* CoreGraphics.framework */; };
+		63F2C2D1204B80CE00F9CEDF /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63F2C2CC204B80CE00F9CEDF /* CoreMedia.framework */; };
+		63F2C2D2204B80CE00F9CEDF /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63F2C2CD204B80CE00F9CEDF /* Accelerate.framework */; };
+		63F2C2D6204B80EA00F9CEDF /* OpencvWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 63F2C2D5204B80EA00F9CEDF /* OpencvWrapper.mm */; };
+		63F2C2D9204BA00900F9CEDF /* FrameExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F2C2D8204BA00900F9CEDF /* FrameExtractor.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		63F2C2AA204B807A00F9CEDF /* face_detection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = face_detection.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63F2C2AD204B807A00F9CEDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		63F2C2AF204B807A00F9CEDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		63F2C2B2204B807A00F9CEDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		63F2C2B4204B807A00F9CEDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63F2C2B7204B807A00F9CEDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		63F2C2B9204B807A00F9CEDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63F2C2C2204B809400F9CEDF /* haarcascade_frontalface_default.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = haarcascade_frontalface_default.xml; path = ../../../opencv_test/opencv_test/res/haarcascade_frontalface_default.xml; sourceTree = "<group>"; };
+		63F2C2C3204B809400F9CEDF /* haarcascade_eye.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = haarcascade_eye.xml; path = ../../../opencv_test/opencv_test/res/haarcascade_eye.xml; sourceTree = "<group>"; };
+		63F2C2C6204B80A600F9CEDF /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		63F2C2C9204B80CE00F9CEDF /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		63F2C2CA204B80CE00F9CEDF /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		63F2C2CB204B80CE00F9CEDF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		63F2C2CC204B80CE00F9CEDF /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		63F2C2CD204B80CE00F9CEDF /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		63F2C2D3204B80EA00F9CEDF /* face_detection-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "face_detection-Bridging-Header.h"; sourceTree = "<group>"; };
+		63F2C2D4204B80EA00F9CEDF /* OpencvWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpencvWrapper.h; sourceTree = "<group>"; };
+		63F2C2D5204B80EA00F9CEDF /* OpencvWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpencvWrapper.mm; sourceTree = "<group>"; };
+		63F2C2D7204B80FD00F9CEDF /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		63F2C2D8204BA00900F9CEDF /* FrameExtractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameExtractor.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63F2C2A7204B807A00F9CEDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63F2C2CE204B80CE00F9CEDF /* AssetsLibrary.framework in Frameworks */,
+				63F2C2CF204B80CE00F9CEDF /* CoreFoundation.framework in Frameworks */,
+				63F2C2D0204B80CE00F9CEDF /* CoreGraphics.framework in Frameworks */,
+				63F2C2D1204B80CE00F9CEDF /* CoreMedia.framework in Frameworks */,
+				63F2C2D2204B80CE00F9CEDF /* Accelerate.framework in Frameworks */,
+				63F2C2C7204B80A600F9CEDF /* opencv2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		63F2C2A1204B807A00F9CEDF = {
+			isa = PBXGroup;
+			children = (
+				63F2C2AC204B807A00F9CEDF /* face_detection */,
+				63F2C2AB204B807A00F9CEDF /* Products */,
+				63F2C2C8204B80CE00F9CEDF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		63F2C2AB204B807A00F9CEDF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63F2C2AA204B807A00F9CEDF /* face_detection.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63F2C2AC204B807A00F9CEDF /* face_detection */ = {
+			isa = PBXGroup;
+			children = (
+				63F2C2C1204B808700F9CEDF /* classes */,
+				63F2C2C0204B808300F9CEDF /* libs */,
+				63F2C2BF204B807F00F9CEDF /* res */,
+				63F2C2AD204B807A00F9CEDF /* AppDelegate.swift */,
+				63F2C2AF204B807A00F9CEDF /* ViewController.swift */,
+				63F2C2B1204B807A00F9CEDF /* Main.storyboard */,
+				63F2C2B4204B807A00F9CEDF /* Assets.xcassets */,
+				63F2C2B6204B807A00F9CEDF /* LaunchScreen.storyboard */,
+				63F2C2B9204B807A00F9CEDF /* Info.plist */,
+			);
+			path = face_detection;
+			sourceTree = "<group>";
+		};
+		63F2C2BF204B807F00F9CEDF /* res */ = {
+			isa = PBXGroup;
+			children = (
+				63F2C2C3204B809400F9CEDF /* haarcascade_eye.xml */,
+				63F2C2C2204B809400F9CEDF /* haarcascade_frontalface_default.xml */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
+		63F2C2C0204B808300F9CEDF /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				63F2C2C6204B80A600F9CEDF /* opencv2.framework */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		63F2C2C1204B808700F9CEDF /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				63F2C2D8204BA00900F9CEDF /* FrameExtractor.swift */,
+				63F2C2D4204B80EA00F9CEDF /* OpencvWrapper.h */,
+				63F2C2D5204B80EA00F9CEDF /* OpencvWrapper.mm */,
+				63F2C2D3204B80EA00F9CEDF /* face_detection-Bridging-Header.h */,
+				63F2C2D7204B80FD00F9CEDF /* PrefixHeader.pch */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
+		63F2C2C8204B80CE00F9CEDF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63F2C2CD204B80CE00F9CEDF /* Accelerate.framework */,
+				63F2C2C9204B80CE00F9CEDF /* AssetsLibrary.framework */,
+				63F2C2CA204B80CE00F9CEDF /* CoreFoundation.framework */,
+				63F2C2CB204B80CE00F9CEDF /* CoreGraphics.framework */,
+				63F2C2CC204B80CE00F9CEDF /* CoreMedia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		63F2C2A9204B807A00F9CEDF /* face_detection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63F2C2BC204B807A00F9CEDF /* Build configuration list for PBXNativeTarget "face_detection" */;
+			buildPhases = (
+				63F2C2A6204B807A00F9CEDF /* Sources */,
+				63F2C2A7204B807A00F9CEDF /* Frameworks */,
+				63F2C2A8204B807A00F9CEDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = face_detection;
+			productName = face_detection;
+			productReference = 63F2C2AA204B807A00F9CEDF /* face_detection.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63F2C2A2204B807A00F9CEDF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = hadri;
+				TargetAttributes = {
+					63F2C2A9204B807A00F9CEDF = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 63F2C2A5204B807A00F9CEDF /* Build configuration list for PBXProject "face_detection" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 63F2C2A1204B807A00F9CEDF;
+			productRefGroup = 63F2C2AB204B807A00F9CEDF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63F2C2A9204B807A00F9CEDF /* face_detection */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63F2C2A8204B807A00F9CEDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63F2C2B8204B807A00F9CEDF /* LaunchScreen.storyboard in Resources */,
+				63F2C2B5204B807A00F9CEDF /* Assets.xcassets in Resources */,
+				63F2C2C4204B809500F9CEDF /* haarcascade_frontalface_default.xml in Resources */,
+				63F2C2C5204B809500F9CEDF /* haarcascade_eye.xml in Resources */,
+				63F2C2B3204B807A00F9CEDF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63F2C2A6204B807A00F9CEDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63F2C2D6204B80EA00F9CEDF /* OpencvWrapper.mm in Sources */,
+				63F2C2B0204B807A00F9CEDF /* ViewController.swift in Sources */,
+				63F2C2D9204BA00900F9CEDF /* FrameExtractor.swift in Sources */,
+				63F2C2AE204B807A00F9CEDF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		63F2C2B1204B807A00F9CEDF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63F2C2B2204B807A00F9CEDF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		63F2C2B6204B807A00F9CEDF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63F2C2B7204B807A00F9CEDF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		63F2C2BA204B807A00F9CEDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		63F2C2BB204B807A00F9CEDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		63F2C2BD204B807A00F9CEDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9FNZ88J7M8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/face_detection/libs",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/face_detection/classes/prefixHeader.pch";
+				INFOPLIST_FILE = face_detection/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.hadri.face-detection";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "face_detection/classes/face_detection-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		63F2C2BE204B807A00F9CEDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9FNZ88J7M8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/face_detection/libs",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/face_detection/classes/prefixHeader.pch";
+				INFOPLIST_FILE = face_detection/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.hadri.face-detection";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "face_detection/classes/face_detection-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		63F2C2A5204B807A00F9CEDF /* Build configuration list for PBXProject "face_detection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63F2C2BA204B807A00F9CEDF /* Debug */,
+				63F2C2BB204B807A00F9CEDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63F2C2BC204B807A00F9CEDF /* Build configuration list for PBXNativeTarget "face_detection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63F2C2BD204B807A00F9CEDF /* Debug */,
+				63F2C2BE204B807A00F9CEDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 63F2C2A2204B807A00F9CEDF /* Project object */;
+}
