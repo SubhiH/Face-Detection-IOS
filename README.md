@@ -4,5 +4,5 @@ IOS application for object detection using Haar feature-based cascade classifier
 Some explanation will be added soon :)
 
 <p align="center">
-  <img src="https://github.com/SubhiH/Face-Detection-IOS/blob/master/screenshots/demo.png" width="500"/>
+  <img src="https://github.com/SubhiH/Face-Detection-IOS/blob/master/screenshots/demo2.jpg" width="500"/>
 </p>
