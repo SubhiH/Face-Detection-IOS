@@ -1,5 +1,5 @@
 # Face-Detection-IOS
-IOS application for object detection using Haar feature-based cascade classifiers in OpenCV
+IOS application for face detection using Haar feature-based cascade classifiers in OpenCV
 
 This [article](https://medium.com/@soubhimhadri/face-detection-in-ios-4330961e9865) contains explanation about the project.
 
